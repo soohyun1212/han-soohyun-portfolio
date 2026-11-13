@@ -1,0 +1,98 @@
+#built-with-ai .section-header { margin-bottom: clamp(28px, 3.25vw, 48px); }
+
+#built-with-ai .section-header h2 {
+  font-size: clamp(56px, 4.6vw, 72px);
+  margin-top: 18px;
+  flex-wrap: nowrap;
+}
+
+#built-with-ai .section-header p { max-width: 100ch; margin-top: 14px; }
+
+
+.ai-production-spread {
+  display: grid;
+  grid-template-columns: minmax(0, 1.9fr) minmax(0, 1fr);
+  gap: clamp(28px, 3.5vw, 58px);
+  align-items: start;
+}
+
+.ai-production-plate {
+  margin: 0;
+}
+
+.ai-production-plate img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1600 / 1064;
+  object-fit: cover;
+  object-position: right center;
+}
+
+.ai-production-stages {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border-top: 1px solid var(--ink);
+}
+
+.ai-production-stage {
+  display: grid;
+  grid-template-columns: 82px minmax(0, 1fr);
+  gap: clamp(12px, 1.4vw, 20px);
+  align-items: baseline;
+  padding-block: 17px;
+  border-bottom: 1px solid var(--line);
+}
+
+.ai-production-stage p {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.8;
+  word-break: keep-all;
+}
+
+.ai-production-stage .ai-production-step {
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 550;
+  letter-spacing: .035em;
+  white-space: nowrap;
+}
+
+.ai-production-step span { color: var(--coral); }
+
+.ai-production-stage h3 {
+  margin-bottom: 8px;
+  font-family: var(--font-display), sans-serif;
+  font-size: clamp(24px, 2.1vw, 32px);
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+
+.ai-production-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 36px;
+  margin-top: 36px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.ai-production-stack > div { display: flex; gap: 12px; }
+.ai-production-stack dt { flex: none; color: var(--ink); font-weight: 550; }
+
+@media (max-width: 900px) {
+  #built-with-ai .section-header h2 { font-size: clamp(38px, 8vw, 56px); }
+  .ai-production-spread { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+}
+
+@media (max-width: 480px) {
+  .ai-production-stage { grid-template-columns: 76px minmax(0, 1fr); gap: 12px; padding-block: 18px; }
+  .ai-production-stage h3 { font-size: 25px; }
+  .ai-production-stage .ai-production-step { font-size: 10px; }
+}

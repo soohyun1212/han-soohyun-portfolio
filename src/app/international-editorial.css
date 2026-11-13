@@ -1,0 +1,99 @@
+/* A publication-scale layer; the retained content grids stay in editorial-home.css. */
+.portfolio-home { overflow-x: clip; }
+.portfolio-home .site-header nav { font-size: 13px; }
+.portfolio-home .wordmark-small { font-size: 10px; }
+.portfolio-home .hero-topline { font-size: 12px; letter-spacing: .025em; }
+.portfolio-home .hero-masthead { font-size: clamp(32px,11vw,158px); letter-spacing: -.03em; }
+.portfolio-home .hero-photo { position: relative; isolation: isolate; }
+.portfolio-home .hero-photo::before { content: none; }
+.portfolio-home .hero-photo-image { transform: none; }
+.portfolio-home .hero-grid { grid-template-columns: minmax(0,1.18fr) minmax(0,1fr); gap: 40px; align-items: start; padding-block: 24px; }
+.portfolio-home .hero-description { max-width: none; }
+.portfolio-home .hero-description > span { display: block; white-space: nowrap; }
+.portfolio-home .hero-slogan { font-size: clamp(34px,calc(18px + 1.5vw),46px); line-height: 1.2; }
+.portfolio-home .hero-scroll a { font-size: 11px; }
+
+.portfolio-home .section-header:not(.section-header--contact) {
+  position: relative; border-top: 0; padding-top: 24px; margin-bottom: 60px;
+}
+.portfolio-home .section-header:not(.section-header--contact)::before {
+  content: ''; position: absolute; inset: 0 0 auto; height: 1px; background: currentColor;
+}
+.portfolio-home .section-kicker { font-size: 14px; font-weight: 550; line-height: 1.5; gap: 24px; letter-spacing: .015em; }
+.portfolio-home .section-kicker > span:first-child { font-size: 16px; font-weight: 600; }
+.portfolio-home .section-header:not(.section-header--contact) h2 {
+  font-size: clamp(38px,4.45vw,64px); line-height: 1.18; letter-spacing: -.05em;
+  margin-top: 32px; font-weight: 650;
+}
+.portfolio-home .section-header:not(.section-header--contact) p { margin-top: 24px; font-size: 15px; }
+.portfolio-home .profile-section .section-header { margin-bottom: 48px; }
+.portfolio-home .profile-history h3 > span { font-size: 10px; }
+.portfolio-home .profile-history h3 { padding-bottom: 20px; }
+.portfolio-home .competency-number { color: #fff; }
+.portfolio-home .competency ul { color: #c9c9c9; }
+
+.portfolio-home .project-card { text-decoration: none; }
+.portfolio-home .project-cover { position: relative; overflow: hidden; isolation: isolate; }
+.portfolio-home .project-cover::after { content: none; }
+.portfolio-home .project-card:focus-visible h3 { color: var(--coral); }
+.portfolio-home .project-card:active h3 { color: var(--coral); }
+.portfolio-home .project-card:hover h3 { text-decoration: none; }
+.portfolio-home .card-category { letter-spacing: .015em; }
+.portfolio-home .subsection-heading > span { font-size: 11px; }
+.portfolio-home .filter-count { font-size: 11px; }
+.portfolio-home .all-projects { background: none; }
+.portfolio-home .site-header a:hover { color: inherit; }
+.portfolio-home .site-header a:active { color: var(--coral); }
+.portfolio-home .project-filters button:hover:not(.active) { border-bottom-color: transparent; }
+
+/* Full-width ink-to-paper transitions share one density system. */
+.print-band { position: relative; height: 48px; background: #fff; overflow: hidden; }
+.print-band::before { content: ''; position: absolute; inset: 0; background: url('/graphics/print-density-ramp.svg') top left / 36px 48px repeat-x; }
+.print-band--inverse::before { transform: rotate(180deg); }
+.portfolio-home .tools-section { background: #fff; }
+.portfolio-home .tools-section::before { display: none; }
+.portfolio-home .tool-row { border-color: var(--line); }
+.portfolio-home .tool-number { font-size: 14px; }
+.portfolio-home .tool-row h3 { font-size: 18px; font-weight: 550; }
+.portfolio-home .tool-row p { font-size: clamp(22px,2.25vw,32px); line-height: 1.65; }
+
+.portfolio-home .planning-grid { gap: 0 42px; align-items: stretch; }
+.portfolio-home .planning-grid article { display: grid; grid-row: span 3; grid-template-rows: subgrid; row-gap: 0; margin-top: 0; }
+.portfolio-home .planning-grid article > * { align-self: start; }
+.portfolio-home .planning-grid h3 { align-self: stretch; max-width: none; }
+.portfolio-home .planning-number { font-size: 148px; font-weight: 500; background: none; color: var(--ink); }
+.portfolio-home .planning-grid h3 { font-weight: 600; }
+.portfolio-home .contact-section .section-kicker { color: #d9d9d9; }
+.portfolio-home .contact-section .section-kicker > span:first-child { color: var(--coral); }
+
+@media (max-width: 1150px) {
+  .portfolio-home .section-header:not(.section-header--contact) h2 { font-size: clamp(38px,4.5vw,54px); }
+  .portfolio-home .planning-number { font-size: 116px; }
+}
+@media (min-width: 761px) and (max-width: 1100px) {
+  .portfolio-home .hero-grid { grid-template-columns: 1fr; gap: 28px; }
+  .portfolio-home .hero-photo { width: 65%; justify-self: end; }
+}
+@media (max-width: 760px) {
+  .portfolio-home .site-header nav { font-size: 11px; gap: 17px; }
+  .portfolio-home .wordmark-small { font-size: 9px; }
+  .portfolio-home .hero-topline { font-size: 11px; }
+  .portfolio-home .hero-masthead { font-size: clamp(32px,11.9vw,90px); }
+  .portfolio-home .hero-grid { grid-template-columns: 1fr; gap: 34px; }
+  .portfolio-home .hero-description > span { white-space: normal; }
+  .portfolio-home .hero-slogan { font-size: clamp(24px,6.15vw,28px); line-height: 1.2; }
+  .portfolio-home .hero-scroll a { font-size: 10px; }
+  .portfolio-home .section-header:not(.section-header--contact) { padding-top: 20px; margin-bottom: 42px; }
+  .portfolio-home .section-kicker { font-size: 12px; gap: 17px; }
+  .portfolio-home .section-kicker > span:first-child { font-size: 14px; }
+  .portfolio-home .section-header:not(.section-header--contact) h2 { font-size: clamp(34px,8.6vw,42px); margin-top: 25px; }
+  .portfolio-home .section-header:not(.section-header--contact) p { font-size: 14px; margin-top: 20px; }
+  .portfolio-home .subsection-heading > span { font-size: 9px; }
+  .portfolio-home .all-projects { background-image: none; }
+  .portfolio-home .tool-number { font-size: 12px; }
+  .portfolio-home .tool-row h3 { font-size: 16px; }
+  .portfolio-home .tool-row p { font-size: 21px; }
+  .portfolio-home .planning-grid { gap: 30px; }
+  .portfolio-home .planning-grid article { grid-row: auto; grid-template-rows: auto auto; grid-template-columns: 62px minmax(0,1fr); gap: 15px 20px; }
+  .portfolio-home .planning-number { font-size: 64px; }
+}

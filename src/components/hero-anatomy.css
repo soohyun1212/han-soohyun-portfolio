@@ -1,0 +1,81 @@
+.hero-anatomy {
+  --annotation-space: 24px;
+  padding-block: var(--annotation-space);
+}
+
+.hero-anatomy .hero-photo-image {
+  position: relative;
+  padding: 0;
+}
+
+.hero-anatomy-lines {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: #333;
+  stroke-width: .9;
+  pointer-events: none;
+}
+
+.hero-anatomy-halo { stroke: #fff; stroke-width: 1.9; }
+.hero-anatomy-lines circle { fill: #333; stroke: #fff; stroke-width: 1; }
+.hero-anatomy-hit-area { stroke: transparent; stroke-width: 14; pointer-events: stroke; cursor: pointer; }
+.hero-anatomy-route--compact { display: none; }
+
+.hero-anatomy-label {
+  position: absolute;
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  color: #555;
+  font-size: 11px;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.hero-anatomy-label [lang="en"] {
+  font-family: var(--font-display), sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: .025em;
+  color: #111;
+}
+
+.hero-anatomy-label--top-left,
+.hero-anatomy-label--top-center,
+.hero-anatomy-label--top-right { top: 0; }
+.hero-anatomy-label--bottom-left,
+.hero-anatomy-label--bottom-center,
+.hero-anatomy-label--bottom-right { bottom: 0; }
+.hero-anatomy-label--top-left,
+.hero-anatomy-label--bottom-left { left: 0; }
+.hero-anatomy-label--top-right,
+.hero-anatomy-label--bottom-right { right: 0; }
+.hero-anatomy-label--top-center { left: 54.7%; translate: -50% 0; }
+.hero-anatomy-label--bottom-center { left: 42%; translate: -42% 0; }
+
+.hero-anatomy-label--walking {
+  top: 80.4%;
+  left: calc(58.33% + 6px);
+  translate: 0 -50%;
+}
+
+.hero-anatomy-label:is(:hover, :focus-visible) { text-decoration: underline; }
+
+@media (max-width: 760px) {
+  .hero-anatomy { --annotation-space: 20px; }
+  .hero-anatomy .hero-photo-image { padding: 0; }
+  .hero-anatomy-label { font-size: 10px; gap: 3px; }
+  .hero-anatomy-label [lang="en"] { font-size: 12px; letter-spacing: 0; }
+  .hero-anatomy-label--bottom-center { left: 50%; translate: -50% 0; }
+  .hero-anatomy-label--walking { left: auto; right: 0; }
+}
+
+@media (max-width: 380px) {
+  .hero-anatomy-route--regular { display: none; }
+  .hero-anatomy-route--compact { display: inline; }
+  .hero-anatomy-label { font-size: 9px; gap: 2px; }
+  .hero-anatomy-label [lang="en"] { font-size: 11px; }
+}

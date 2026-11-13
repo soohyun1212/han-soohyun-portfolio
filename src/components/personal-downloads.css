@@ -1,0 +1,28 @@
+.personal-downloads {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 28px;
+}
+
+.personal-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 0;
+  border: 0;
+  border-bottom: 1px solid currentColor;
+  border-radius: 0;
+  background: transparent;
+  color: inherit;
+  font-size: 12px;
+}
+
+.site-footer > .personal-downloads,
+.site-footer > .image-credits-toggle { flex-basis: 100%; }
+
+.detail-personal-downloads { margin-top: 28px; margin-bottom: 32px; }
+.image-credits-toggle { font-size: 10px; color: var(--muted); }
+.contact-section .image-credits-toggle { color: var(--gray); }
+.image-credits-toggle summary { width: fit-content; cursor: pointer; }
+.image-credits-content { margin-top: 12px; line-height: 1.8; }
+.image-credits-content a { text-decoration: underline; text-underline-offset: 3px; }

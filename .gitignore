@@ -1,0 +1,12 @@
+node_modules/
+.next/
+.tools/
+.vercel/
+*.tsbuildinfo
+*.log
+.env*
+!.env.example
+test-results/
+out/
+reference/
+/public/documents/medi-bridge-plan-and-wireframes.pdf
