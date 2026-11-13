@@ -19,8 +19,8 @@ const stages = [
   },
   {
     name: 'PUBLISH',
-    lead: 'CHATGPT SITES',
-    description: '완성된 사이트를 배포하고 화면별 렌더링과 주요 링크를 확인했습니다.',
+    lead: 'GITHUB PAGES',
+    description: 'GitHub Pages로 사이트를 배포하고 화면별 렌더링과 주요 링크의 정상 작동을 검증했습니다.',
   },
 ];
 
@@ -30,7 +30,7 @@ export function AiProduction() {
       <header className="section-header">
         <div className="section-kicker"><span>05</span><span aria-hidden="true">/</span><span>BUILT WITH AI</span></div>
         <h2 id="ai-production-title"><span className="section-title-en">WALKING LEGS</span>{' '}<span className="section-anatomy-name">걷는다리</span></h2>
-        <p>ChatGPT로 기획하고 Codex로 구현한 뒤, 직접 검수·개선해 배포했습니다.</p>
+        <p>ChatGPT를 활용해 기획을 구조화하고, Codex로 구현한 뒤 직접 검수·개선하여 GitHub Pages에 배포했습니다.</p>
       </header>
       <div className="ai-production-spread">
         <figure className="ai-production-plate">
@@ -57,7 +57,7 @@ export function AiProduction() {
       </div>
       <dl className="ai-production-stack">
         <div><dt>구현</dt><dd>Next.js · React · TypeScript · Tailwind CSS</dd></div>
-        <div><dt>배포</dt><dd>ChatGPT Sites · 정적 내보내기</dd></div>
+        <div><dt>배포</dt><dd>GitHub Pages · GitHub Actions</dd></div>
       </dl>
     </section>
   );
