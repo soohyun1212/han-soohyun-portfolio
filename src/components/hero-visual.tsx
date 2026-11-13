@@ -1,4 +1,5 @@
 import './hero-anatomy.css';
+import { withBasePath } from '@/lib/site-path';
 
 // Coordinates are measured against the unchanged 1920 × 1020 dorsal plate.
 const annotations = [
@@ -21,7 +22,7 @@ function AnnotationLabel({ annotation }: { annotation: (typeof annotations)[numb
 export function HeroVisual() {
   return <figure className="hero-photo hero-anatomy">
     <div className="hero-photo-image">
-      <img src="/images/lobster-dorsal-screened.png" width="1920" height="1020" alt="위에서 촬영한 전신 가재 사진을 명암별 망점 크기로 표현한 흑백 인쇄 그래픽" fetchPriority="high"/>
+      <img src={withBasePath('/images/lobster-dorsal-screened.png')} width="1920" height="1020" alt="위에서 촬영한 전신 가재 사진을 명암별 망점 크기로 표현한 흑백 인쇄 그래픽" fetchPriority="high"/>
       <svg className="hero-anatomy-lines" viewBox="0 0 1920 1020" aria-hidden="true">
         {annotations.map(annotation => <a key={annotation.en} href={annotation.href} tabIndex={-1}>
           {('compactPath' in annotation

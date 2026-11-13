@@ -9,10 +9,10 @@
 *{box-sizing:border-box}body{margin:0;background:#f5f5f2;color:#111;font-family:Arial,sans-serif}nav{position:sticky;top:0;z-index:2;display:flex;flex-wrap:wrap;gap:8px;padding:14px 20px;background:#f5f5f2;border-bottom:1px solid #bbb}button{font:inherit;font-size:13px;padding:9px 14px;border:1px solid #999;background:transparent;color:#111;cursor:pointer}button[aria-pressed=true]{background:#111;color:#f5f5f2;border-color:#111}.sizes{display:flex;gap:8px;margin-left:auto}.stage{width:100%;overflow:auto;padding:20px 0}iframe{display:block;width:1440px;height:1200px;border:0;margin:0;pointer-events:none}nav span{align-self:center;font-size:12px;padding:0 10px}
 </style>
 <nav aria-label="Hero 비교"><button data-variant="a" aria-pressed="true">A안 · Medium</button><button data-variant="b" aria-pressed="false">B안 · Strong</button><div class="sizes"><button data-width="1440" aria-pressed="true">1440px</button><button data-width="390" aria-pressed="false">390px</button><span>100% 크기</span></div></nav>
-<div class="stage"><iframe title="Hero 실제 크기 비교 미리보기" src="/"></iframe></div>
+<div class="stage"><iframe title="Hero 실제 크기 비교 미리보기" src="./"></iframe></div>
 <script>
 const frame=document.querySelector('iframe');let variant='a';
-const images={a:'/images/lobster-halftone-a-medium.png',b:'/images/lobster-halftone-b-strong.png'};
+const images={a:'./images/lobster-halftone-a-medium.png',b:'./images/lobster-halftone-b-strong.png'};
 function fit(){const doc=frame.contentDocument;const hero=doc?.querySelector('.hero');if(hero)frame.style.height=Math.ceil(hero.getBoundingClientRect().bottom+frame.contentWindow.scrollY)+'px'}
 function show(){const doc=frame.contentDocument;if(!doc?.querySelector('.hero-photo img'))return;let style=doc.getElementById('comparison-image');if(!style){style=doc.createElement('style');style.id='comparison-image';doc.head.append(style)}style.textContent='.hero-photo-image{background-image:url("'+images[variant]+'");background-size:100% auto;background-repeat:no-repeat;background-position:center 8px}.hero-photo-image>img{visibility:hidden}';const preload=new Image();preload.onload=fit;preload.src=images[variant];fit();frame.title=(variant==='a'?'A안 Medium':'B안 Strong')+' Hero 실제 크기 미리보기'}
 frame.addEventListener('load',()=>{show();frame.contentDocument.fonts.ready.then(fit);new ResizeObserver(fit).observe(frame.contentDocument.querySelector('.hero'))});

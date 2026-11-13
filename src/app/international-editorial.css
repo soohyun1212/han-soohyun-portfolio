@@ -48,7 +48,7 @@
 
 /* Full-width ink-to-paper transitions share one density system. */
 .print-band { position: relative; height: 48px; background: #fff; overflow: hidden; }
-.print-band::before { content: ''; position: absolute; inset: 0; background: url('/graphics/print-density-ramp.svg') top left / 36px 48px repeat-x; }
+.print-band::before { content: ''; position: absolute; inset: 0; background: url('../../public/graphics/print-density-ramp.svg') top left / 36px 48px repeat-x; }
 .print-band--inverse::before { transform: rotate(180deg); }
 .portfolio-home .tools-section { background: #fff; }
 .portfolio-home .tools-section::before { display: none; }

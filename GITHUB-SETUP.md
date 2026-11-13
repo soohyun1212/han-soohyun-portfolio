@@ -8,7 +8,7 @@
 1. ZIP을 풀고 `han-soohyun-portfolio` 폴더의 내용을 GitHub 저장소 루트로 올립니다.
 2. Node.js 24 LTS(또는 package.json의 지원 버전)를 설치합니다.
 3. `npm ci` 후 `npm run dev`를 실행합니다.
-4. 개발 주소는 http://127.0.0.1:3000/ 입니다.
+4. 개발 주소는 http://127.0.0.1:3000/han-soohyun-portfolio/ 입니다.
 5. `npm run build`는 정적 웹사이트를 `out/`에 생성합니다.
    현재 `output: 'export'` 설정이므로 배포 대상은 `out/`입니다.
 
@@ -30,3 +30,13 @@ MEDI-BRIDGE 자료는 저장소의 파일 크기 제한 때문에 두 바이너�
 
 기존 프로젝트와 공개 사이트는 수정하거나 재배포하지 않았습니다.
 기존 README와 docs는 작업 이력이므로 일부 설명보다 현재 소스 설정이 최신입니다.
+
+## GitHub Pages 자동 배포
+
+- 공개 주소: https://soohyun1212.github.io/han-soohyun-portfolio/
+- 저장소 Settings → Pages → Build and deployment → Source를 **GitHub Actions**로 설정합니다.
+- main에 push하면 `.github/workflows/pages.yml`이 Node.js 24로 의존성을 설치하고 정적 빌드한 뒤 out/을 배포합니다.
+- 기본 basePath는 `/han-soohyun-portfolio`입니다. NEXT_PUBLIC_BASE_PATH를 변경하면 새 빌드가 필요합니다.
+- Next Link는 접두어를 자동 적용합니다. 일반 이미지·다운로드·홈 앵커는 src/lib/site-path.ts에서 공통 처리합니다.
+- PDF 원본 조각과 다운로드 설정은 그대로 유지하며 다운로드 시 동일한 PDF 한 파일로 복원합니다.
+- 인증 토큰이나 별도의 GitHub Pages 배포 비밀값은 코드에 넣지 않습니다.

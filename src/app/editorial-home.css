@@ -68,7 +68,7 @@
   position: absolute;
   inset: 0 0 auto;
   height: 64px;
-  background: url('/graphics/screened-transition.svg') top center / cover no-repeat;
+  background: url('../../public/graphics/screened-transition.svg') top center / cover no-repeat;
   opacity: .6;
   pointer-events: none;
 }

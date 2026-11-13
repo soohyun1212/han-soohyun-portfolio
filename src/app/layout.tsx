@@ -18,7 +18,7 @@ const oswald = localFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://han-soohyun-portfolio-v2.almondanvil2.chatgpt.site'),
+  metadataBase: new URL('https://soohyun1212.github.io/han-soohyun-portfolio/'),
   title: '한수현 - 포트폴리오',
   openGraph: { title: '한수현 - 포트폴리오', siteName: '한수현 - 포트폴리오' },
   twitter: { card: 'summary', title: '한수현 - 포트폴리오' },

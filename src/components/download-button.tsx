@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { withBasePath } from '@/lib/site-path';
 
 export function DownloadButton({ label, href, className = '' }: { label: string; href?: string; className?: string }) {
   const [busy, setBusy] = useState(false);
@@ -10,11 +11,11 @@ export function DownloadButton({ label, href, className = '' }: { label: string;
     setBusy(true);
     setFailed(false);
     try {
-      const response = await fetch(href);
+      const response = await fetch(withBasePath(href));
       if (!response.ok) throw new Error('Download unavailable');
       const manifest: { filename: string; size: number; parts: string[] } = await response.json();
       const parts = await Promise.all(manifest.parts.map(async part => {
-        const response = await fetch(part);
+        const response = await fetch(withBasePath(part));
         if (!response.ok) throw new Error('Download incomplete');
         return response.blob();
       }));
@@ -38,6 +39,6 @@ export function DownloadButton({ label, href, className = '' }: { label: string;
     {failed && <span role="alert">다운로드에 실패했습니다. 다시 시도해 주세요.</span>}
   </>;
   return href
-    ? <a className={`${className} download-button`} href={href} download aria-label={`${label} 다운로드`}>{content}</a>
+    ? <a className={`${className} download-button`} href={withBasePath(href)} download aria-label={`${label} 다운로드`}>{content}</a>
     : <button className={`${className} download-button`} type="button" disabled aria-label={`${label} 다운로드 (파일 연결 전)`} title="파일 연결 전">{content}</button>;
 }

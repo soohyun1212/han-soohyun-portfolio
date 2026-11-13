@@ -1,8 +1,9 @@
 import Link from 'next/link';
 import { PersonalDownloads } from './personal-downloads';
+import { withBasePath } from '@/lib/site-path';
 
 export function Header({ detail = false }: { detail?: boolean }) {
-  const prefix = detail ? '/' : '';
+  const prefix = detail ? withBasePath('/') : '';
   return <header className="site-header"><div className="header-inner">
     <Link className="wordmark" href={detail ? '/' : '#top'} aria-label="한수현 포트폴리오 홈">한수현<span className="wordmark-small">PORTFOLIO</span></Link>
     <nav aria-label="주요 메뉴"><a href={`${prefix}#about`}>About</a><a href={`${prefix}#projects`}>Projects</a><a href={`${prefix}#contact`}>Contact</a></nav>
@@ -10,8 +11,8 @@ export function Header({ detail = false }: { detail?: boolean }) {
 }
 
 export function Footer({ detail = false }: { detail?: boolean }) {
-  const prefix = detail ? '/' : '';
-  return <footer className="site-footer"><a className="footer-brand" href={detail ? '/' : '#top'}>한수현<span>LOBSTER / 2026</span></a><nav aria-label="하단 메뉴"><a href={`${prefix}#projects`}>Projects</a><a href={`${prefix}#about`}>About</a><a href={`${prefix}#contact`}>Contact</a><a href="#top">↑ Top</a></nav><span className="copyright">© 2026 한수현</span>
+  const prefix = detail ? withBasePath('/') : '';
+  return <footer className="site-footer"><a className="footer-brand" href={detail ? withBasePath('/') : '#top'}>한수현<span>LOBSTER / 2026</span></a><nav aria-label="하단 메뉴"><a href={`${prefix}#projects`}>Projects</a><a href={`${prefix}#about`}>About</a><a href={`${prefix}#contact`}>Contact</a><a href="#top">↑ Top</a></nav><span className="copyright">© 2026 한수현</span>
     {!detail && <PersonalDownloads/>}
     <details className="image-credits-toggle">
       <summary>Image Credits</summary>

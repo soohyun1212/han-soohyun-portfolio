@@ -1,4 +1,5 @@
 import './ai-production.css';
+import { withBasePath } from '@/lib/site-path';
 
 const stages = [
   {
@@ -34,7 +35,7 @@ export function AiProduction() {
       <div className="ai-production-spread">
         <figure className="ai-production-plate">
           <img
-            src="/images/crayfish-shore-usfws-print.png"
+            src={withBasePath('/images/crayfish-shore-usfws-print.png')}
             alt="강가에 있는 가재의 등껍질과 걷는다리를 측면에서 보여주는 흑백 하프톤 사진"
             width={1600}
             height={1064}
