@@ -19,7 +19,7 @@ Windows PowerShell에서 npm.ps1 실행이 차단된다면 `npm.cmd ci`, `npm.cm
 
 MEDI-BRIDGE 자료는 저장소의 파일 크기 제한 때문에 두 바이너리 조각과 다운로드 설정 파일로 저장되어 있습니다.
 `public/documents/medi-bridge-plan-and-wireframes.part-1`, `.part-2`, `.download.json`을 모두 유지하세요.
-공통 다운로드 버튼이 이 파일들을 읽어 원본 PDF 한 파일을 내려받습니다. 내용과 화질은 원본과 같습니다.
+개발·빌드 실행 전에 `scripts/prepare-pdfs.mjs`가 조각을 원본 PDF 한 파일로 복원하고 SHA256을 검증합니다. ‘보기’ 버튼은 복원된 PDF를 새 탭에서 엽니다. 내용과 화질은 원본과 같습니다.
 이력서·자기소개서는 아직 파일이 연결되지 않은 상태이며 `src/data/documents.ts`에서 설정합니다.
 
 ## 제외 항목
@@ -38,5 +38,5 @@ MEDI-BRIDGE 자료는 저장소의 파일 크기 제한 때문에 두 바이너�
 - main에 push하면 `.github/workflows/pages.yml`이 Node.js 24로 의존성을 설치하고 정적 빌드한 뒤 out/을 배포합니다.
 - 기본 basePath는 `/han-soohyun-portfolio`입니다. NEXT_PUBLIC_BASE_PATH를 변경하면 새 빌드가 필요합니다.
 - Next Link는 접두어를 자동 적용합니다. 일반 이미지·다운로드·홈 앵커는 src/lib/site-path.ts에서 공통 처리합니다.
-- PDF 원본 조각과 다운로드 설정은 그대로 유지하며 다운로드 시 동일한 PDF 한 파일로 복원합니다.
+- PDF 원본 조각과 설정은 그대로 유지하며 빌드 시 동일한 PDF 한 파일로 복원합니다. 생성된 PDF는 Git에 추가하지 않고 정적 배포 산출물에만 포함합니다.
 - 인증 토큰이나 별도의 GitHub Pages 배포 비밀값은 코드에 넣지 않습니다.
