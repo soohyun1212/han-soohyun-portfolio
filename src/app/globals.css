@@ -240,6 +240,11 @@ img { display: block; max-width: 100%; }
 .deliverable-button:hover { border-color: var(--ink); }
 .download-label { display: inline-flex; align-items: center; gap: 8px; font-size: 11px; white-space: nowrap; }
 .download-label svg { flex: none; }
+/* Move only the word; reserve its former track to keep button and icon geometry. */
+.download-label::before { content: '보기'; visibility: hidden; }
+.pdf-view-caption { position: relative; }
+.pdf-view-word { position: absolute; left: 100%; top: 50%; translate: 0 -50%; white-space: pre; font-size: 11px; }
+.deliverable-button .pdf-view-word { font-family: var(--font-meta); font-size: 9px; color: var(--muted); }
 .download-button:disabled { color: var(--muted); cursor: default; }
 .download-button:disabled:hover { border-color: var(--line); }
 .button-text.download-button { padding-inline: 0; border: 0; border-bottom: 1px solid currentColor; }
