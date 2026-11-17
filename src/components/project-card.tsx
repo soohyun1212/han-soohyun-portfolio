@@ -5,8 +5,8 @@ import type { Project } from '@/data/projects';
 
 export function ProjectCover({ project, large = false }: { project: Project; large?: boolean }) {
   return <div className={`project-cover ${large ? 'cover-large' : ''}`}>
-    {project.image && !large
-      ? <img className="project-cover-image" src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}${project.image}`} alt={`${project.name} 프로젝트 썸네일`} width={1600} height={900} loading="lazy" />
+    {project.image
+      ? <img className="project-cover-image" src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}${project.image}`} alt={`${project.name} 프로젝트 표지`} width={1600} height={900} loading={large ? 'eager' : 'lazy'} />
       : <ImagePlaceholder label={`${project.title} 이미지 영역`}/>}
   </div>;
 }

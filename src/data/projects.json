@@ -152,17 +152,20 @@
     "slug": "hanatour",
     "number": "03",
     "name": "HANATOUR",
+    "image": "/images/hanatour-cover.webp",
     "cardSummary": "여행 목적에 맞춰 상품 탐색 기준과 홈·카테고리 구조를 재설계한 여행 플랫폼",
-    "title": "하나투어 홈 화면 및 카테고리 개선",
+    "title": "하나투어 앱 UX/UI 개선 보고서",
     "category": "서비스 개선",
     "summary": "흩어진 여행상품 정보를 여행 목적과 탐색 기준에 맞게 재구성해, 홈 화면과 카테고리 구조를 개선한 여행 플랫폼 UX 개선 프로젝트",
     "role": "사용자 조사 · UX 분석 · IA 설계",
     "team": "3인 팀 프로젝트",
     "period": "2026.09.10 ~ 2026.12.10",
     "materials": [
-      "UX/UI 개선 보고서",
-      "화면설계서"
+      "보고서 및 화면설계서"
     ],
+    "downloads": {
+      "보고서 및 화면설계서": "/documents/hanatour-report-and-wireframes.download.json"
+    },
     "award": false,
     "overview": "하나투어는 다양한 여행 상품과 서비스가 하나의 화면에 혼재되어 사용자가 자신의 여행 목적에 맞는 진입점을 빠르게 파악하기 어려웠습니다. 2030 사용자의 실제 탐색 행동을 바탕으로 홈과 카테고리의 정보구조와 레이블을 재정리해 주요 상품을 더 적은 시행착오로 탐색할 수 있도록 개선했습니다.",
     "contributions": [
@@ -443,6 +446,7 @@
     "slug": "rocket-fresh",
     "number": "07",
     "name": "ROCKET FRESH",
+    "image": "/images/rocket-fresh-cover.webp",
     "cardSummary": "상품 비교가 어려운 로켓프레시의 탐색 구조를 사용자 조사·경쟁사 분석으로 개선한 리뉴얼 프로젝트",
     "title": "쿠팡 로켓프레시 웹사이트 메인화면 리뉴얼",
     "category": "서비스 개선",
@@ -453,6 +457,9 @@
     "materials": [
       "기획서"
     ],
+    "downloads": {
+      "기획서": "/documents/rocket-fresh-report.pdf"
+    },
     "award": false,
     "overview": "기존 로켓프레시 웹사이트는 과도하게 세분화된 카테고리와 반복되는 홍보 영역, 긴 스크롤 구조로 상품을 탐색하고 비교하기 어려웠습니다. 시장·사용자 조사와 78명의 설문, 경쟁 서비스 분석을 바탕으로 카테고리를 단순화하고 추천·소통 콘텐츠와 탐색 기능을 재구성했습니다.",
     "contributions": [

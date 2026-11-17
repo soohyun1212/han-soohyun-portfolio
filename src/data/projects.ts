@@ -6,6 +6,6 @@ export type Project = {
   award: boolean; overview: string; contributions: TextBlock[]; processIntro: string;
   process: TextBlock[]; decisions: { title: string; initial: string; evidence: string; change: string }[];
   result: string; reflection: string; sourcePages: number[]; image?: string;
-  downloads?: Record<string, string>;
+  downloads?: Record<string, string | undefined>;
 };
 export const projects: Project[] = projectData;
