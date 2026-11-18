@@ -228,6 +228,7 @@
     "slug": "jeju-emergency",
     "number": "04",
     "name": "JEJU / EMS",
+    "image": "/images/jeju-emergency-cover.webp",
     "cardSummary": "제주 응급의료 자원과 혼잡도를 통합해 구급대원의 이송·수용 판단을 돕는 정보시스템",
     "title": "제주형 차세대 응급의료 정보시스템 제안",
     "category": "신규 서비스 기획",
@@ -236,9 +237,12 @@
     "team": "3인 팀 프로젝트",
     "period": "2026.09.03 ~ 2026.12.10",
     "materials": [
-      "제안서",
-      "화면설계서"
+      "발표자료",
+      "제안서"
     ],
+    "downloads": {
+      "발표자료": "/documents/jeju-emergency-presentation.pdf"
+    },
     "award": false,
     "overview": "기존 응급의료 화면은 병상 정보의 기준 시각과 최신성을 확인하기 어렵고, 수용 판단에 필요한 정보가 여러 곳에 분산되어 있었습니다. 실제 RFP와 현황 분석을 바탕으로 제주 전체부터 의료기관 상세까지 한 흐름으로 확인하고, 데이터의 최신성과 수용 가능성을 함께 판단할 수 있는 실시간 상황판을 제안했습니다.",
     "contributions": [
