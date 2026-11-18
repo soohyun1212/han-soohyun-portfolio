@@ -522,6 +522,7 @@
     "slug": "kaywon",
     "number": "08",
     "name": "KAYWON",
+    "image": "/images/kaywon-cover.webp",
     "cardSummary": "재학생·입시생의 정보 탐색을 위해 사용자 조사·벤치마킹으로 구조와 기능을 개선한 리뉴얼 프로젝트",
     "title": "계원예술대학교 웹사이트 리뉴얼",
     "category": "서비스 개선",
@@ -532,6 +533,9 @@
     "materials": [
       "기획서"
     ],
+    "downloads": {
+      "기획서": "/documents/kaywon-renewal-report.pdf"
+    },
     "award": false,
     "overview": "기존 계원예술대학교 웹사이트는 다양한 기능과 연계 사이트를 제공하고 있었지만, 정보와 메뉴가 복잡해 사용자가 원하는 내용을 빠르게 찾기 어려웠습니다. 사용자 조사와 벤치마킹·SWOT 분석을 바탕으로 검색·퀵메뉴·공지·행사·학생 콘텐츠의 우선순위를 다시 정리해 정보 접근성을 높이는 방향으로 메인 화면을 리뉴얼했습니다.",
     "contributions": [
