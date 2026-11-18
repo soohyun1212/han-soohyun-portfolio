@@ -16,6 +16,14 @@
 .portfolio-home .section-header:not(.section-header--contact) p { max-width: 650px; margin-top: 20px; }
 
 /* Two portraits and the personal record retain their existing structure. */
+.portfolio-home .profile-portrait {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center;
+}
 .portfolio-home .profile-name { padding-top: 0; padding-bottom: 23px; }
 .portfolio-home .profile-name h3 { font-size: 40px; font-weight: 550; line-height: 1.4; margin-bottom: 8px; }
 .portfolio-home .profile-name > span { font-size: 10px; }
