@@ -79,6 +79,7 @@
     "slug": "aqui",
     "number": "02",
     "name": "aquí",
+    "image": "/images/aqui-cover.webp",
     "cardSummary": "반려동물과 함께하는 시간을 기록하고, 이별 이후의 일상까지 돕는 펫로스 케어 서비스",
     "title": "펫로스 전후 통합 케어 서비스 aquí",
     "category": "신규 서비스 기획",
@@ -87,9 +88,11 @@
     "team": "6인 팀 프로젝트",
     "period": "2026.09.01 ~ 2026.11.22",
     "materials": [
-      "기획서",
-      "화면설계서"
+      "기획서 및 화면설계서"
     ],
+    "downloads": {
+      "기획서 및 화면설계서": "/documents/aqui-planning-and-wireframes.pdf"
+    },
     "award": false,
     "overview": "반려동물과의 이별을 앞둔 보호자가 돌봄과 필요한 준비를 이어가고, 사별 이후의 절차와 기록까지 자연스럽게 연결할 수 있도록 기획한 서비스입니다. 사별 전·후를 하나의 흐름으로 설계해 상황에 필요한 정보와 기능을 쉽게 확인하도록 구성했습니다.",
     "contributions": [
