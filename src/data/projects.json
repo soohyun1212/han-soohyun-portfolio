@@ -378,6 +378,7 @@
     "slug": "momoa",
     "number": "06",
     "name": "MOMOA",
+    "image": "/images/momoa-cover.webp",
     "cardSummary": "분산된 약속 정보와 준비·도착 현황을 한곳에서 확인하도록 설계한 약속 관리 서비스",
     "title": "올인원 약속 관리 서비스 MOMOA",
     "category": "신규 서비스 기획",
@@ -386,8 +387,11 @@
     "team": "3인 팀 프로젝트",
     "period": "2026.03.03 ~ 2026.06.09",
     "materials": [
-      "서비스 기획서"
+      "기획서"
     ],
+    "downloads": {
+      "기획서": "/documents/momoa-planning.download.json"
+    },
     "award": false,
     "overview": "약속을 준비할 때 일정·장소·준비물·친구 상태가 여러 앱과 대화방에 흩어져 있어 확인과 결정에 불필요한 시간이 들고 있었습니다. MOMOA는 약속 준비부터 당일 도착 상황까지 필요한 정보를 한곳에 모아, 사용자가 지금 해야 할 일을 빠르게 확인하고 함께 약속을 준비할 수 있도록 기획한 서비스입니다.",
     "contributions": [
