@@ -113,3 +113,8 @@
 .portfolio-home .hero-description > span { white-space: normal; }
 .portfolio-home .ai-production-stage { grid-template-columns: 108px minmax(0,1fr); }
 @media (max-width: 760px) { .portfolio-home .ai-production-stage { grid-template-columns: 92px minmax(0,1fr); } }
+
+
+/* Match the personal PDF link's visible "보기" and arrow track to the primary hero CTA. */
+.portfolio-home .hero-actions .button-text.download-button .pdf-view-word { font-size: inherit; }
+.portfolio-home .hero-actions .button-text.download-button .download-label { font-size: inherit; }
