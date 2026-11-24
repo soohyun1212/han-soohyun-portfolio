@@ -499,6 +499,7 @@ body { font-size: 16px; }
 
 /* Project pages: text stays legible without zooming out to inspect metadata. */
 .detail-page .back-link, .detail-page .detail-category { font-size: 14px; }
+.detail-page .award { font-size: 13px; }
 .detail-page .detail-summary { font-size: 17px; }
 .detail-page .detail-meta dt, .detail-page .detail-meta dd { font-size: 15px; }
 .detail-page .detail-section-nav { font-size: 15px; }
