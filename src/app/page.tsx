@@ -13,6 +13,7 @@ import { withBasePath } from '@/lib/site-path';
 import './editorial-home.css';
 import './international-editorial.css';
 import './section-branding.css';
+import './typography-desktop.css';
 
 const competencies = [
   ['사용자 조사', '데스크 리서치 · 지역·시장 현황 조사', '사용자 인터뷰 · 설문조사', '에스노그래피 · 타운왓칭'],
