@@ -453,3 +453,95 @@ img { display: block; max-width: 100%; }
 @media (max-width: 760px) {
   .back-to-top { right: calc(16px + env(safe-area-inset-right, 0px)); bottom: calc(16px + env(safe-area-inset-bottom, 0px) + var(--footer-clearance, 0px)); }
 }
+
+
+/* 2026-11-24 professor review: readable labels and body copy at 1920×1080.
+   Preserve existing layout/typographic hierarchy; expand only undersized text. */
+body { font-size: 16px; }
+.site-header .wordmark { font-size: 17px; }
+.site-header .wordmark-small { font-size: 13px; }
+.site-header nav { font-size: 15px; }
+.eyebrow, .hero-topline { font-size: 14px; }
+.hero-description { font-size: 17px; }
+.hero-scroll a { font-size: 14px; }
+.button, .personal-download { font-size: 16px; }
+.section-kicker { font-size: 14px; }
+.section-header p { font-size: 17px; }
+.profile-name > span, .profile-history h3 > span { font-size: 14px; }
+.profile-basics > div, .profile-history li { font-size: 16px; }
+.profile-basics dt, .profile-history time { font-size: 14px; }
+.subsection-heading > span, .filter-count { font-size: 14px; }
+.subsection-heading p { font-size: 16px; }
+.card-category, .card-meta, .all-project-grid .card-meta { font-size: 14px; }
+.project-card > p, .all-project-grid .project-card > p { font-size: 16px; }
+.project-filters button { font-size: 15px; }
+.project-filters button > span { font-size: 13px; }
+.award { font-size: 13px; }
+.planning-grid p { font-size: 16px; }
+.contact-label, .copy-status { font-size: 14px; }
+.contact-action { font-size: 16px; }
+.contact-section .section-header p { font-size: 16px; }
+.site-footer nav { font-size: 14px; }
+.footer-brand > span, .copyright { font-size: 13px; }
+
+/* Project pages: text stays legible without zooming out to inspect metadata. */
+.detail-page .back-link, .detail-page .detail-category { font-size: 14px; }
+.detail-page .detail-summary { font-size: 17px; }
+.detail-page .detail-meta dt, .detail-page .detail-meta dd { font-size: 15px; }
+.detail-page .detail-section-nav { font-size: 15px; }
+.detail-page .detail-section-label > span { font-size: 14px; }
+.detail-page .contribution-label { font-size: 16px; }
+.detail-page .contribution-grid article > span { font-size: 14px; }
+.detail-page .contribution-grid p { font-size: 16px; }
+.detail-page .section-intro, .detail-page .process-grid p { font-size: 17px; }
+.detail-page .decision-index, .detail-page .result-caption { font-size: 14px; }
+.detail-page .decision-grid h4 { font-size: 16px; }
+.detail-page .decision-grid h4 > span { font-size: 14px; }
+.detail-page .decision-grid p, .detail-page .result-grid p { font-size: 16px; }
+.detail-page .deliverables p { font-size: 15px; }
+.detail-page .deliverable-button { font-size: 16px; }
+.detail-page .deliverable-button > span:last-child { font-size: 15px; }
+.detail-page .project-pagination, .detail-page .pagination-disabled { font-size: 14px; }
+.detail-page .project-pagination .project-list-link { font-size: 14px; }
+
+/* Keep "보기" immediately after its document title; longer titles can wrap. */
+.download-button .pdf-view-caption { position: static; min-width: 0; }
+.download-button .pdf-view-word { position: static; translate: none; font-size: inherit; white-space: normal; }
+.download-button .download-label { font-size: inherit; }
+.download-button .download-label::before { content: none; }
+.download-button .download-label svg { width: 18px; height: 18px; }
+.detail-page .deliverable-button .pdf-view-word { font-size: inherit; color: inherit; }
+
+@media (max-width: 760px) {
+  body { font-size: 15px; }
+  .site-header .wordmark { font-size: 13px; }
+  .site-header .wordmark-small { font-size: 10px; }
+  .site-header nav { gap: 13px; font-size: 12px; }
+  .eyebrow, .hero-topline, .hero-scroll a { font-size: 12px; }
+  .hero-description, .section-header p { font-size: 15px; }
+  .button, .personal-download { font-size: 14px; }
+  .section-kicker { font-size: 12px; }
+  .profile-name > span, .profile-history h3 > span { font-size: 12px; }
+  .profile-basics > div, .profile-history li { font-size: 14px; }
+  .profile-basics dt, .profile-history time { font-size: 12px; }
+  .card-category, .card-meta, .all-project-grid .card-meta { font-size: 12px; }
+  .project-card > p, .all-project-grid .project-card > p { font-size: 14px; }
+  .project-filters button { font-size: 13px; }
+  .project-filters button > span { font-size: 12px; }
+  .subsection-heading > span { font-size: 12px; }
+  .contact-label, .copy-status { font-size: 12px; }
+  .contact-section .section-header p { font-size: 14px; }
+  .site-footer nav { font-size: 12px; }
+  .footer-brand > span, .copyright { font-size: 12px; }
+  .detail-page .back-link, .detail-page .detail-category { font-size: 12px; }
+  .detail-page .detail-summary, .detail-page .section-intro { font-size: 15px; }
+  .detail-page .detail-meta dt, .detail-page .detail-section-label > span { font-size: 12px; }
+  .detail-page .detail-meta dd, .detail-page .detail-section-nav { font-size: 14px; }
+  .detail-page .contribution-grid article > span, .detail-page .decision-index, .detail-page .result-caption { font-size: 12px; }
+  .detail-page .contribution-grid p, .detail-page .process-grid p, .detail-page .decision-grid p, .detail-page .result-grid p { font-size: 14px; }
+  .detail-page .decision-grid h4 { font-size: 15px; }
+  .detail-page .decision-grid h4 > span { font-size: 12px; }
+  .detail-page .deliverable-button { font-size: 14px; }
+  .detail-page .deliverable-button > span:last-child { font-size: 14px; }
+  .detail-page .project-pagination, .detail-page .pagination-disabled, .detail-page .project-pagination .project-list-link { font-size: 12px; }
+}
