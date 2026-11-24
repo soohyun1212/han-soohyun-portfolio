@@ -1,0 +1,57 @@
+/* Desktop typography review.
+   Reference: 1920 × 1080 at 100% browser zoom.
+   Keep the existing display hierarchy; make supporting information readable. */
+@media (min-width: 1200px) {
+  body { font-size: 16px; }
+
+  /* Global navigation and small utility labels */
+  .portfolio-home .eyebrow,
+  .portfolio-home .document-request,
+  .portfolio-home .contact-label,
+  .portfolio-home .copy-status,
+  .portfolio-home .footer-brand > span,
+  .portfolio-home .copyright,
+  .portfolio-home .image-credits,
+  .detail-page .wordmark-small,
+  .detail-page .site-header nav,
+  .detail-page .footer-brand > span,
+  .detail-page .copyright,
+  .detail-page .image-credits {
+    font-size: 12px;
+  }
+
+  .portfolio-home .profile-basics > div { font-size: 14px; }
+  .portfolio-home .profile-basics dt { font-size: 13px; }
+  .portfolio-home .project-card .award { font-size: 12px; }
+  .portfolio-home .card-meta { font-size: 12px; }
+  .portfolio-home .contact-action { font-size: 14px; }
+
+  /* Project detail: metadata, section navigation and supporting copy */
+  .detail-page .back-link { font-size: 13px; }
+  .detail-page .detail-category { font-size: 12px; }
+  .detail-page .detail-summary { font-size: 16px; }
+  .detail-page .detail-meta dt { font-size: 12px; }
+  .detail-page .detail-meta dd { font-size: 14px; }
+  .detail-page .detail-section-nav { font-size: 13px; }
+  .detail-page .detail-section-label > span { font-size: 12px; }
+  .detail-page .contribution-label { font-size: 15px; }
+  .detail-page .contribution-grid article > span { font-size: 12px; }
+  .detail-page .contribution-grid p,
+  .detail-page .process-grid p,
+  .detail-page .decision-grid p { font-size: 15px; }
+  .detail-page .decision-index,
+  .detail-page .decision-grid h4 > span,
+  .detail-page .result-caption { font-size: 12px; }
+  .detail-page .decision-grid h4 { font-size: 14px; }
+  .detail-page .result-grid p { font-size: 16px; }
+  .detail-page .deliverables p { font-size: 14px; }
+  .detail-page .deliverable-button { font-size: 15px; }
+  .detail-page .deliverable-button > span:last-child { font-size: 12px; }
+  .detail-page .project-pagination { font-size: 13px; }
+  .detail-page .project-pagination .project-list-link { font-size: 13px; }
+  .detail-page .project-pagination strong { font-size: 15px; }
+  .detail-page .site-footer nav { font-size: 13px; }
+
+  /* Keep the footer credit legible on both light and dark footer surfaces. */
+  .detail-page .copyright { color: #666; }
+}
