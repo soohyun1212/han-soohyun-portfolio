@@ -32,6 +32,11 @@ jobs:
       - uses: actions/configure-pages@v5
       - run: npm ci
       - run: npm run build
+      - name: Set readable Korean PDF titles in published files
+        run: |
+          python3 -m venv /tmp/portfolio-pdf-metadata
+          /tmp/portfolio-pdf-metadata/bin/pip install --quiet "PyMuPDF==1.26.5"
+          /tmp/portfolio-pdf-metadata/bin/python scripts/set-pdf-titles.py out/documents
       - name: Verify static export
         run: test -f out/index.html && touch out/.nojekyll
       - uses: actions/upload-pages-artifact@v4
