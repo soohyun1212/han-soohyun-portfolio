@@ -541,6 +541,8 @@ body { font-size: 16px; }
 /* Keep the PDF action suffix the same size and style as the deliverable title. */
 .detail-page .deliverable-button .pdf-view-word { font-family: inherit; font-size: inherit; color: inherit; }
 
-/* Show the specific award alongside the existing project award badge. */
-.detail-category { flex-wrap: wrap; }
-.detail-category .award-detail { color: var(--ink); font-family: var(--font-body); font-size: 14px; line-height: 1.6; }
+/* Award details follow the shared project metadata, without changing other project layouts. */
+.detail-award { display: flex; align-items: baseline; flex-wrap: wrap; gap: 10px 22px; border-bottom: 1px solid var(--line); padding: 0 0 24px; margin: -12px 0 32px; font-size: 15px; line-height: 1.7; }
+.detail-award-label { color: var(--muted); font-family: var(--font-meta); font-size: 13px; letter-spacing: .4px; }
+.detail-award strong { font-weight: 600; }
+@media (max-width: 760px) { .detail-award { gap: 6px 13px; padding-bottom: 19px; margin: -8px 0 25px; font-size: 14px; } .detail-award-label { width: 100%; font-size: 12px; } }
