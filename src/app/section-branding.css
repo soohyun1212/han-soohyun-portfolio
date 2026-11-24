@@ -108,3 +108,8 @@
   .portfolio-home .contact-section .section-header p { font-size: 14px; }
   .portfolio-home .site-footer nav { font-size: 12px; }
 }
+
+/* Keep the larger hero copy inside its column instead of clipping long lines. */
+.portfolio-home .hero-description > span { white-space: normal; }
+.portfolio-home .ai-production-stage { grid-template-columns: 108px minmax(0,1fr); }
+@media (max-width: 760px) { .portfolio-home .ai-production-stage { grid-template-columns: 92px minmax(0,1fr); } }
