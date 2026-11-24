@@ -14,15 +14,27 @@
   border-radius: 0;
   background: transparent;
   color: inherit;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .site-footer > .personal-downloads,
-.site-footer > .image-credits-toggle { flex-basis: 100%; }
+.site-footer > .image-credits-visible { flex-basis: 100%; }
 
 .detail-personal-downloads { margin-top: 28px; margin-bottom: 32px; }
-.image-credits-toggle { font-size: 10px; color: var(--muted); }
-.contact-section .image-credits-toggle { color: var(--gray); }
-.image-credits-toggle summary { width: fit-content; cursor: pointer; }
-.image-credits-content { margin-top: 12px; line-height: 1.8; }
+.image-credits-visible {
+  color: var(--muted);
+  border-top: 1px solid currentColor;
+  padding-top: 16px;
+  font-size: 14px;
+  line-height: 1.75;
+}
+.contact-section .image-credits-visible { color: var(--gray); }
+.image-credits-heading { font-weight: 600; font-size: 14px; margin-bottom: 10px; }
+.image-credits-content { display: grid; gap: 5px; line-height: 1.75; }
+.image-credits-content p { overflow-wrap: anywhere; }
 .image-credits-content a { text-decoration: underline; text-underline-offset: 3px; }
+
+@media (max-width: 760px) {
+  .personal-download { font-size: 14px; }
+  .image-credits-visible, .image-credits-heading { font-size: 12px; }
+}
