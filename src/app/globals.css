@@ -471,6 +471,8 @@ img { display: block; max-width: 100%; }
 /* 2026-11-24 professor review: readable labels and body copy at 1920×1080.
    Preserve existing layout/typographic hierarchy; expand only undersized text. */
 body { font-size: 16px; }
+.document-request { font-size: 13px; }
+.footer-brand { font-size: 14px; }
 .site-header .wordmark { font-size: 17px; }
 .site-header .wordmark-small { font-size: 13px; }
 .site-header nav { font-size: 15px; }
