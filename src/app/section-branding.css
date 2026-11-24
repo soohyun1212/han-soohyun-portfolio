@@ -50,3 +50,61 @@
   .portfolio-home .section-header.section-header p { font-size: 14px; margin-top: 20px; }
   .portfolio-home .contact-invitation { font-size: 30px; margin-bottom: 36px; }
 }
+
+
+/* Readability pass — retains existing grids, photos, headings and copy. */
+.portfolio-home .site-header nav { font-size: 15px; }
+.portfolio-home .wordmark-small { font-size: 13px; }
+.portfolio-home .hero-topline, .portfolio-home .hero-scroll a { font-size: 14px; }
+.portfolio-home .hero-description { font-size: 17px; }
+.portfolio-home .hero-actions .button { font-size: 16px; }
+.portfolio-home .section-header .section-kicker { font-size: 15px; }
+.portfolio-home .section-anatomy-name { font-size: 18px; }
+.portfolio-home .section-header.section-header p { font-size: 17px; }
+.portfolio-home .profile-name > span, .portfolio-home .profile-history h3 > span { font-size: 14px; }
+.portfolio-home .profile-history li { font-size: 16px; }
+.portfolio-home .profile-history time { font-size: 14px; }
+.portfolio-home .competency ul { font-size: 17px; }
+.portfolio-home .subsection-heading > span, .portfolio-home .filter-count { font-size: 14px; }
+.portfolio-home .project-card .card-category { font-size: 14px; }
+.portfolio-home .project-card > p { font-size: 16px; }
+.portfolio-home .project-filters button { font-size: 16px; }
+.portfolio-home .project-filters button > span { font-size: 14px; }
+.portfolio-home .all-project-grid .project-card > p { font-size: 16px; }
+.portfolio-home .planning-grid p { font-size: 17px; }
+.portfolio-home .tool-number { font-size: 16px; }
+.portfolio-home .tool-row h3 { font-size: 20px; }
+.portfolio-home .ai-production-stage p { font-size: 16px; }
+.portfolio-home .ai-production-stage .ai-production-step { font-size: 14px; }
+.portfolio-home .ai-production-stack { font-size: 15px; }
+.portfolio-home .contact-section .section-header p { font-size: 16px; }
+.portfolio-home .site-footer nav { font-size: 14px; }
+
+@media (max-width:760px) {
+  .portfolio-home .site-header nav { font-size: 12px; }
+  .portfolio-home .wordmark-small { font-size: 10px; }
+  .portfolio-home .hero-topline, .portfolio-home .hero-scroll a { font-size: 12px; }
+  .portfolio-home .hero-description { font-size: 15px; }
+  .portfolio-home .hero-actions .button { font-size: 14px; }
+  .portfolio-home .section-header .section-kicker { font-size: 12px; }
+  .portfolio-home .section-anatomy-name { font-size: 13px; }
+  .portfolio-home .section-header.section-header p { font-size: 15px; }
+  .portfolio-home .profile-name > span, .portfolio-home .profile-history h3 > span { font-size: 12px; }
+  .portfolio-home .profile-history li { font-size: 14px; }
+  .portfolio-home .profile-history time { font-size: 12px; }
+  .portfolio-home .competency ul { font-size: 14px; }
+  .portfolio-home .subsection-heading > span { font-size: 12px; }
+  .portfolio-home .project-card .card-category { font-size: 12px; }
+  .portfolio-home .project-card > p { font-size: 14px; }
+  .portfolio-home .project-filters button { font-size: 13px; }
+  .portfolio-home .project-filters button > span { font-size: 12px; }
+  .portfolio-home .all-project-grid .project-card > p { font-size: 14px; }
+  .portfolio-home .planning-grid p { font-size: 14px; }
+  .portfolio-home .tool-number { font-size: 13px; }
+  .portfolio-home .tool-row h3 { font-size: 17px; }
+  .portfolio-home .ai-production-stage p { font-size: 14px; }
+  .portfolio-home .ai-production-stage .ai-production-step { font-size: 12px; }
+  .portfolio-home .ai-production-stack { font-size: 13px; }
+  .portfolio-home .contact-section .section-header p { font-size: 14px; }
+  .portfolio-home .site-footer nav { font-size: 12px; }
+}
