@@ -504,14 +504,6 @@ body { font-size: 16px; }
 .detail-page .project-pagination, .detail-page .pagination-disabled { font-size: 14px; }
 .detail-page .project-pagination .project-list-link { font-size: 14px; }
 
-/* Keep "보기" immediately after its document title; longer titles can wrap. */
-.download-button .pdf-view-caption { position: static; min-width: 0; }
-.download-button .pdf-view-word { position: static; translate: none; font-size: inherit; white-space: normal; }
-.download-button .download-label { font-size: inherit; }
-.download-button .download-label::before { content: none; }
-.download-button .download-label svg { width: 18px; height: 18px; }
-.detail-page .deliverable-button .pdf-view-word { font-size: inherit; color: inherit; }
-
 @media (max-width: 760px) {
   body { font-size: 15px; }
   .site-header .wordmark { font-size: 13px; }
