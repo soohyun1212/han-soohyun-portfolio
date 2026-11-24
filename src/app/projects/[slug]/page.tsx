@@ -8,7 +8,6 @@ import { MetadataList } from '@/components/metadata-list';
 import { DownloadButton } from '@/components/download-button';
 import { PersonalDownloads } from '@/components/personal-downloads';
 import { Arrow } from '@/components/icons';
-import '../../typography-desktop.css';
 
 export const dynamicParams = false;
 export function generateStaticParams() { return projects.map(p => ({ slug: p.slug })); }
