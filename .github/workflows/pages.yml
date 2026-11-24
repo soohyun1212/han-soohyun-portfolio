@@ -35,8 +35,9 @@ jobs:
       - name: Set readable Korean PDF titles in published files
         run: |
           python3 -m venv /tmp/portfolio-pdf-metadata
-          /tmp/portfolio-pdf-metadata/bin/pip install --quiet "PyMuPDF==1.26.5"
+          /tmp/portfolio-pdf-metadata/bin/pip install --quiet "PyMuPDF==1.26.5" "Pillow==11.3.0"
           /tmp/portfolio-pdf-metadata/bin/python scripts/set-pdf-titles.py out/documents
+          /tmp/portfolio-pdf-metadata/bin/python scripts/optimize-public-images.py out/images
       - name: Verify static export
         run: test -f out/index.html && touch out/.nojekyll
       - uses: actions/upload-pages-artifact@v4
